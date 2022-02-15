@@ -1,0 +1,155 @@
+body{
+  overflow: hidden;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+
+.loader {
+  display: none;
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+.main{
+  width: 100%;
+  justify-content: center;
+  margin: 20px;
+}
+
+.main input{
+  margin: 10px;
+}
+
+
+.soc{
+  margin-top: 100px;
+  height:170px; 
+  background-color: transparent;
+  display: flex;
+ 
+justify-content: center;
+  align-items:center;
+}
+.soc a{
+display: flex;
+background: #f7fbff;
+height: 55px;
+width: 55px;
+margin: 5px;
+border-radius:50px;
+align-items : center;
+justify-content : center;
+text-decoration : none;
+box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+-6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+
+border:1px solid rgba(0,0,0,0.0);
+transition:transform 0.5s;
+
+}
+
+.soc a i{
+
+font-size:25px;
+color: #777;
+}
+
+
+
+.soc a:hover{
+box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+
+inset -4px -4px 6px -1px rgba(255, 255,255,0.7),
+-0.5px -0.5px 0px rgba(255, 255, 255, 1),
+0.5px 0.5px 0px rgba(0,0,0,0.15) ,
+
+
+0px 12px 10px -10px rgba(0,0,0,0.05) ;
+border:1px solid rgba(0,0,0,0.01);
+transform: translateY(2px);
+
+
+
+
+}
+.soc a:hover i{
+font-size:30px;
+transition:0.3s ease;
+transform: scale(o.90);
+
+}
+
+
+.soc a:hover .fa-facebook{
+color: #3b5998;
+}
+.soc a:hover .fa-linkedin{
+color: #1ca1f3;
+}
+
+.soc a:hover .fa-instagram{
+color:#d62c82 ;
+}
+
+
+.soc a:hover .fa-github{
+color:  #363635  ;
+}
+
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#root{
+
+  height: auto;
+  width: auto;
+}
+
+.body{
+  height: auto;
+}
+
+.pages{
+  align-items: center;
+
+}
+
+.home a{
+  margin: 8px;
+  padding: 5px;
+  border: 0.5px solid #000;
+}
